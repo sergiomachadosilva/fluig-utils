@@ -3,7 +3,7 @@
  * @param {String} dia Parâmetro obrigatório, dia do mês
  * @param {String} mes Parâmetro obrigatório, mês do ano, 01 para janeiro
  * @param {String} ano Parâmetro obrigatório, ano com 4 dígitos
- * @example
+ * @example 
  * consultarFeriado(25, 12, 2020) - Retorna true (natal)
  * @returns {boolean} Retorna true se a data exitir no cadastro de feriados
  * @author Sérgio Machado

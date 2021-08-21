@@ -1,0 +1,622 @@
+<list>
+  <ProcessDefinition>
+    <processDefinitionPK>
+      <companyId>1</companyId>
+      <processId>procAtualizarDocumento</processId>
+    </processDefinitionPK>
+    <processDescription>Atualizar documento</processDescription>
+    <instruction></instruction>
+    <active>true</active>
+    <publicProcess>false</publicProcess>
+    <volumeId>Default</volumeId>
+    <categoryId></categoryId>
+    <managerEngineAllocationId></managerEngineAllocationId>
+    <snapshotFrequency>0</snapshotFrequency>
+    <baseDay>0</baseDay>
+    <baseMonth>0</baseMonth>
+    <periodId>Default</periodId>
+    <uniqueCardVersion>false</uniqueCardVersion>
+    <keyWord></keyWord>
+    <complementsLevel>1</complementsLevel>
+    <notifyRequisitionerComplements>true</notifyRequisitionerComplements>
+    <notifyManagerComplements>false</notifyManagerComplements>
+    <deadlineTime>0</deadlineTime>
+    <warningDeadlineTime>0</warningDeadlineTime>
+    <notifyAuthorityComplements>true</notifyAuthorityComplements>
+  </ProcessDefinition>
+  <ProcessDefinitionVersion>
+    <processDefinitionVersionPK>
+      <companyId>1</companyId>
+      <processId>Atualizar documento</processId>
+      <version>17</version>
+    </processDefinitionVersionPK>
+    <versionDescription></versionDescription>
+    <formId>2714</formId>
+    <editionMode>true</editionMode>
+    <updateAttachmentsVersion>false</updateAttachmentsVersion>
+    <controlsAttachmentsSecurity>false</controlsAttachmentsSecurity>
+    <active>true</active>
+    <blockedVersion>false</blockedVersion>
+    <counterSign>false</counterSign>
+    <openInstances>0</openInstances>
+    <bpmnVersion>2</bpmnVersion>
+    <processStates/>
+    <favorito>false</favorito>
+    <inheritFormSecurity>false</inheritFormSecurity>
+    <mobileReady>false</mobileReady>
+  </ProcessDefinitionVersion>
+  <list>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procAtualizarDocumento</processId>
+        <version>1</version>
+        <sequence>4</sequence>
+      </processStatePK>
+      <stateName>Início</stateName>
+      <stateDescription>Início</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>true</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>220</positionX>
+      <positionY>130</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>10</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procAtualizarDocumento</processId>
+        <version>1</version>
+        <sequence>7</sequence>
+      </processStatePK>
+      <stateName>Atualizar Documento</stateName>
+      <stateDescription>Atualizar Documento</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>false</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>0</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>350</positionX>
+      <positionY>109</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>82</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>1</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procAtualizarDocumento</processId>
+        <version>1</version>
+        <sequence>9</sequence>
+      </processStatePK>
+      <stateName>Tratar erro de integração</stateName>
+      <stateDescription>Tratar erro de integração</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Grupo</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;departamento_TI&lt;/Group&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>350</positionX>
+      <positionY>360</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procAtualizarDocumento</processId>
+        <version>1</version>
+        <sequence>8</sequence>
+      </processStatePK>
+      <stateName>Intermediário</stateName>
+      <stateDescription>Intermediário</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>450</positionX>
+      <positionY>179</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>43</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>7</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procAtualizarDocumento</processId>
+        <version>1</version>
+        <sequence>14</sequence>
+      </processStatePK>
+      <stateName>Fim</stateName>
+      <stateDescription>Fim</stateDescription>
+      <instruction>Esta atividade indica que o processo terminado e que não ocorrerá nenhum tipo de pós processamento.</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>false</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>560</positionX>
+      <positionY>130</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>68</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+  </list>
+  <list/>
+  <list>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procAtualizarDocumento</processId>
+        <version>1</version>
+        <linkSequence>6</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>4</initialStateSequence>
+      <finalStateSequence>7</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procAtualizarDocumento</processId>
+        <version>1</version>
+        <linkSequence>10</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>8</initialStateSequence>
+      <finalStateSequence>9</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procAtualizarDocumento</processId>
+        <version>1</version>
+        <linkSequence>11</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>9</initialStateSequence>
+      <finalStateSequence>7</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procAtualizarDocumento</processId>
+        <version>1</version>
+        <linkSequence>13</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>7</initialStateSequence>
+      <finalStateSequence>14</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+  </list>
+  <list/>
+  <list>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>servicetask7</eventId>
+        <processId>procAtualizarDocumento</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function servicetask7(attempt, message) {
+	try {
+
+		var anexos = hAPI.listAttachments(); // Retorna a lista de anexos da solicitação
+		var documento = hAPI.getCardValue(&quot;documentoDescricao&quot;)
+
+		for (var i = 0; i &lt; anexos.size(); i++) {
+			var anexo = anexos.get(i);
+			// Procura o documento pela descrição informada no campo &quot;Descrição do documento&quot; do formulário 
+			if (anexo.getDocumentDescription() == documento) {
+				atualizarDocumento(anexo)
+			}
+		}
+
+	} catch (error) {
+		log.error(&quot;Houve um erro na atividade de serviço servicetask7&quot;);
+		throw error;
+	}
+}
+
+// Objeto com o login e senha do usuário que irá executar o webservice
+var Servico = {
+	usuario: &quot;sergio.machado&quot;,
+	senha: &quot;123456&quot;
+}
+
+
+/**
+ * Atualiza um documento
+ * @param {object} anexo Parâmetro obrigatório, objeto DocumentDto
+ * @author Sérgio Machado
+ */
+function atualizarDocumento(anexo) {
+	try {
+
+		/*
+		 * É necessário cadastrar o serviço ECMDocumentService no ambiente fluig
+		 * Codigo: ECMDocumentService
+		 * Descrição: Webservice responsável por realizar operações referentes a documentos do fluig. Pode ser utilizado para criar, alterar, excluir e procurar documentos, entre outros recursos.
+		 * URL: http://&lt;SERVER&gt;:&lt;PORT&gt;/webdesk/ECMDocumentService?wsdl
+		 * */
+
+		// Determina serviço que será utilizado
+		var documentService = ServiceManager.getService(&apos;ECMDocumentService&apos;);
+		// Inicializa serviço
+		var documentServiceHelper = documentService.getBean();
+		// Instancia classe do serviço                             
+		var documentServiceService = documentServiceHelper.instantiate(&apos;com.totvs.technology.ecm.dm.ws.ECMDocumentServiceService&apos;);
+		// Obtem porta de serviço para chamar métodos do serviço
+		var documentServicePort = documentServiceService.getDocumentServicePort();
+		// Instancia classe de array de DocumentDto
+		var document = documentServiceHelper.instantiate(&apos;com.totvs.technology.ecm.dm.ws.DocumentDtoArray&apos;);
+		// Instancia classe de array de anexos. Objetos que representa os anexos físicos
+		var attachments = documentServiceHelper.instantiate(&apos;com.totvs.technology.ecm.dm.ws.AttachmentArray&apos;);
+		// Instancia classe de representação física do anexo que compõem um documento
+		var attachment = documentServiceHelper.instantiate(&apos;com.totvs.technology.ecm.dm.ws.Attachment&apos;);
+		// Instancia classe de representação de segurança de um documento e suas propriedades
+		var security = documentServiceHelper.instantiate(&apos;com.totvs.technology.ecm.dm.ws.DocumentSecurityConfigDtoArray&apos;);
+		// Instancia classe de representação de aprovadores de um documento
+		var approvers = documentServiceHelper.instantiate(&apos;com.totvs.technology.ecm.dm.ws.ApproverDtoArray&apos;);
+		// Instancia classe que representa os documentos relacionados com o documento
+		var relatedDocuments = documentServiceHelper.instantiate(&apos;com.totvs.technology.ecm.dm.ws.RelatedDocumentDtoArray&apos;);
+		
+		// Recupera as informações DocumentDto atuais do documento informando no formulário que vai ser atualizado
+		var documentDto = getDocumentDto(Number(hAPI.getCardValue(&quot;documentoId&quot;)))
+		var byteArray = documentoBase64(anexo) // base 64 do novo documento
+		
+		var descricaoAlteracao = hAPI.getCardValue(&quot;documentoAlteracao&quot;)
+
+		documentDto.setVersionOption(&quot;2&quot;)  // Condição de versionamento do documento. 2 Será criado nova versão
+		documentDto.setVersionDescription(descricaoAlteracao)
+		
+		//Arquivo físico
+		attachment.setFileName(documentDto.getPhisicalFile());
+		attachment.setFilecontent(byteArray);
+		attachment.setPrincipal(true);
+		attachment.setAttach(false);
+
+		// Adiciona o arquivo físico no objeto DocumentDto
+		attachments.getItem().add(attachment)
+		// Adiciona o objeto DocumentDto ao objeto DocumentDtoArray
+		document.getItem().add(documentDto)
+
+		// Chama o método passando os parâmetros necessários e armazena seu retorno na variável
+		var retorno = documentServicePort.updateDocument(Servico.usuario, Servico.senha, 1, document, attachments, security, approvers, relatedDocuments);
+	
+	} catch (error) {
+		log.error(&quot;Houve um erro na sua função atualizarDocumento&quot;);
+		throw error;
+	}
+}
+
+
+/*
+ * Função para retornar as informações DocumentDto pelo id de um documento
+ * É necessário cadastrar o serviço ECMDocumentService no ambiente fluig
+ * Codigo: ECMDocumentService
+ * Descrição: Webservice responsável por realizar operações referentes a documentos do fluig. Pode ser utilizado para criar, alterar, excluir e procurar documentos, entre outros recursos.
+ * URL: http://&lt;SERVER&gt;:&lt;PORT&gt;/webdesk/ECMDocumentService?wsdl
+ * */
+function getDocumentDto(id) {
+	try {
+		// Determina serviço que será utilizado
+		var documentService = ServiceManager.getService(&apos;ECMDocumentService&apos;);
+		// Inicializa serviço
+		var documentServiceHelper = documentService.getBean();
+		// Instancia classe do serviço                             
+		var documentServiceService = documentServiceHelper.instantiate(&apos;com.totvs.technology.ecm.dm.ws.ECMDocumentServiceService&apos;);
+		// Obtem porta de serviço para chamar métodos do serviço
+		var documentServicePort = documentServiceService.getDocumentServicePort();
+		
+		// Chama o método passando os parâmetros necessários e armazena seu retorno na variável retorno
+		var data = documentServicePort.getActiveDocument(Servico.usuario, Servico.senha, 1, id, getValue(&quot;WKUser&quot;));
+
+		return data.getItem().get(0)
+
+	} catch (error) {
+		log.error(error);
+		throw error;
+	}
+}
+
+
+/**
+ * Retorna o base64 de um arquivo físico de um documento, caso o usuário tenha permissão para acessá-lo.
+ * @param {object} documentDto Parâmetro obrigatório, objeto DocumentDto
+ * @returns {String} Retorna o base64 do arquivo físico
+ * @author Sérgio Machado
+ */
+function documentoBase64(documentDto) {
+	try {
+		// Determina serviço que será utilizado
+		var documentService = ServiceManager.getService(&apos;ECMDocumentService&apos;);
+		// Inicializa serviço
+		var documentServiceHelper = documentService.getBean();
+		// Instancia classe do serviço                             
+		var documentServiceService = documentServiceHelper.instantiate(&apos;com.totvs.technology.ecm.dm.ws.ECMDocumentServiceService&apos;);
+		// Obtem porta de serviço para chamar métodos do serviço
+		var documentServicePort = documentServiceService.getDocumentServicePort();
+		// Chama o método passando os parâmetros necessários e armazena seu retorno na variável retorno
+
+		var companyId = documentDto.getCompanyId() // código da empresa
+		var documentId = documentDto.getDocumentId() // número do documento
+		var colleagueId = getValue(&quot;WKUser&quot;) // matrícula do usuário
+		var documentoVersao = documentDto.getVersion() // número da versão do documento
+		var nomeArquivo = documentDto.getPhisicalFile() // nome do arquivo físico
+
+		var result = documentServicePort.getDocumentContent(Servico.usuario, Servico.senha, companyId, documentId, colleagueId, documentoVersao, nomeArquivo);
+
+		return result
+
+	} catch (error) {
+		log.error(&quot;Houve um erro na sua função documentoBase64&quot;);
+		throw error;
+	}
+
+}</eventDescription>
+    </WorkflowProcessEvent>
+  </list>
+  <list/>
+  <list>
+    <SwimLane>
+      <color>FFFFFF</color>
+      <height>461</height>
+      <width>751</width>
+      <positionX>50</positionX>
+      <positionY>50</positionY>
+      <stateName>Atualizar Documento</stateName>
+      <type>1</type>
+      <parentSequence>0</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>procAtualizarDocumento</processId>
+        <version>1</version>
+        <sequence>1</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>FFFFFF</color>
+      <height>230</height>
+      <width>721</width>
+      <positionX>80</positionX>
+      <positionY>50</positionY>
+      <stateName>Todos os Departamentos</stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>procAtualizarDocumento</processId>
+        <version>1</version>
+        <sequence>2</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>FFFFFF</color>
+      <height>231</height>
+      <width>721</width>
+      <positionX>80</positionX>
+      <positionY>280</positionY>
+      <stateName>Departamento de TI</stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>procAtualizarDocumento</processId>
+        <version>1</version>
+        <sequence>3</sequence>
+      </swimLanePK>
+    </SwimLane>
+  </list>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list>
+    <ProcessStateService>
+      <companyId>1</companyId>
+      <processId>procAtualizarDocumento</processId>
+      <version>1</version>
+      <sequence>7</sequence>
+      <attempts>3</attempts>
+      <sucessFullMessage>Documento atualizado com sucesso</sucessFullMessage>
+      <serviceName>ECMDocumentService</serviceName>
+      <frequency>1</frequency>
+      <frequencyType>0</frequencyType>
+    </ProcessStateService>
+  </list>
+  <list/>
+  <list/>
+  <list>
+    <ProcessAttachmentRules>
+      <id>0</id>
+      <tenantId>0</tenantId>
+      <processId>procAtualizarDocumento</processId>
+      <processVersion>17</processVersion>
+      <stateSequence>4</stateSequence>
+      <operator>3</operator>
+      <amount>1</amount>
+      <name></name>
+      <message>Anexe algum documento a esta solicitação</message>
+    </ProcessAttachmentRules>
+  </list>
+  <list/>
+</list>

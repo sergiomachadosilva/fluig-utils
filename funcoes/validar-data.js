@@ -1,6 +1,13 @@
-//input: 30/02/2020 output; false
-//input: 31/11/2020 output; false
-//input: 31/10/2020 output; true
+/**
+ * Valida se uma data é válida
+ * @param {String} dateStr Parâmetro obrigatório, data no formato dd/MM/yyyy
+ * @example
+ * validarData("30/02/2020") - Retorna false
+ * @example
+ * validarData("31/10/2020") - Retorna true
+ * @returns {boolean} Retorna true se a data for válida
+ * @author Sérgio Machado
+ */
 function validarData(dateStr) {
     var s = dateStr.split('/');
     var d = new Date(+s[2], s[1] - 1, +s[0]);

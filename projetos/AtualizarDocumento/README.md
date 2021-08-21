@@ -1,5 +1,5 @@
 # Atualizar documento através do webservice ECMDocumentService
 
-![Formulário](/sergiomachadosilva/fluig-utils/blob/main/projetos/AtualizarDocumento/formulario.png)
+![Formulário](https://github.com/sergiomachadosilva/fluig-utils/blob/main/projetos/AtualizarDocumento/formulario.png)
 
-![Formulário](/sergiomachadosilva/fluig-utils/blob/main/projetos/AtualizarDocumento/diagrama.png)
+![Diagrama](https://github.com/sergiomachadosilva/fluig-utils/blob/main/projetos/AtualizarDocumento/diagrama.png)

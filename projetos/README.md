@@ -1,5 +1,5 @@
 # Projetos
 
-Projetos de exemplos explorando os recuros do Fluig.
+Projetos de exemplos explorando os recursos do Fluig.
 
 - [Atualizar documento através do webservice ECMDocumentService](AtualizarDocumento)

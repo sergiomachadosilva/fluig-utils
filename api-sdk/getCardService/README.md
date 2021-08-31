@@ -1,3 +1,9 @@
+<style>
+    table {
+        width: 100%;
+    }
+</style>
+
 # Método createItem​ do serviço getCardService
 
 Criação de um novo registro de formulário.

@@ -2,7 +2,7 @@
 
 Este projeto simples tem como objetivo demonstrar como podemos utilizar os métodos **getActiveDocument**, **getDocumentContent** e **updateDocument** do serviço ECMDocumentService para atualizarmos um documento existente no GED.
 
-bastante útil caso você tenha um processo de elaboração de documentos, onde precisa atualizar este documento incremetando sua versão, para caso queira restaurar para uma versão anterior.
+Bastante útil caso você tenha um processo de elaboração de documentos, onde precisa atualizar este documento incremetando sua versão, para caso queira restaurar para uma versão anterior posteriormente.
 
 #### É necessário cadastrar o serviço ECMDocumentService no ambiente fluig
 

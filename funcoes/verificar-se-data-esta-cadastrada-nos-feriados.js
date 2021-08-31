@@ -1,5 +1,5 @@
 /**
- * Valida se uma data é válida
+ * Verifica se a data informada é um feriado
  * @param {String} dia Parâmetro obrigatório, dia do mês
  * @param {String} mes Parâmetro obrigatório, mês do ano, 01 para janeiro
  * @param {String} ano Parâmetro obrigatório, ano com 4 dígitos

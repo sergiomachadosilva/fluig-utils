@@ -1,5 +1,5 @@
 /**
- * Valida se uma data é válida
+ * Função para validar data
  * @param {String} dateStr Parâmetro obrigatório, data no formato dd/MM/yyyy
  * @example
  * validarData("30/02/2020") - Retorna false

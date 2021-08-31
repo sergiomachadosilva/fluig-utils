@@ -2,7 +2,7 @@
 
 Criação de um novo registro de formulário.
 
-## Métodos construtor
+## Método construtor
 
 ```js
 var cardItemVO = new com.fluig.sdk.api.workflow.CardItemVO();

@@ -30,5 +30,5 @@ cardItemVO.setFormData(formData)
 // Chama o serviço e guarda o retorno na variável result
 var result = fluigAPI.getCardService().createItem(cardItemVO)
 
-log.info("### Saída de retorno da variável result")
+log.info("### Retorno da variável result")
 log.dir(result)

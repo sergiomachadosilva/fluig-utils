@@ -13,11 +13,11 @@ var cardItemVO = new com.fluig.sdk.api.workflow.CardItemVO();
 Se você quiser saber o que tem dentro dessa variável cardItemVO, imprima no log em algum script que rode no lado do servidor, como por exemplo, scripts de workflow, eventos de formulários ou um dataset.
 
 ```js
-log.info("### saída do método construtor cardItemVO");
+log.info("### Retorno do método construtor cardItemVO");
 log.dir(cardItemVO);
 ```
 
-Sua saída será um objeto igual a este mostrado logo abaixo:
+Sua saída será um objeto igual a este mostrado abaixo:
 
 ```js
 {
@@ -117,7 +117,7 @@ cardItemVO.setFormData(formData);
 // Chama o serviço e guarda o retorno na variável result
 var result = fluigAPI.getCardService().createItem(cardItemVO);
 
-log.info("### Saída de retorno da variável result");
+log.info("### Retorno da variável result");
 log.dir(result);
 ```
 

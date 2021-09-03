@@ -6,7 +6,7 @@ cardItemVO.setDocumentDescription("Nome do meu documento")
 cardItemVO.setVersion(1000)
 
 // Lista com os campos e valores do formulário
-var formData = new java.util.ArrayList();
+var ficha = new java.util.ArrayList();
 
 var campo1 = new java.util.HashMap();
 campo1.put("name", "anexo");
@@ -21,11 +21,11 @@ campo3.put("name", "editor");
 campo3.put("value", "Texto de exemplo para o campo editor");
 
 // Adiciona os campos na lista
-formData.add(campo1)
-formData.add(campo2)
-formData.add(campo3)
+ficha.add(campo1)
+ficha.add(campo2)
+ficha.add(campo3)
 
-cardItemVO.setFormData(formData)
+cardItemVO.setFormData(ficha)
 
 // Chama o serviço e guarda o retorno na variável result
 var result = fluigAPI.getCardService().createItem(cardItemVO)

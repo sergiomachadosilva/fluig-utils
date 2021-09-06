@@ -2,7 +2,7 @@
 
 Criação de um novo registro de formulário.
 
-## 01 Passo - Criando nova instância de CardItemVO
+## 01 Passo - Criando uma nova instância de CardItemVO
 
 Para criarmos uma nova instância, utilizamos o método construtor CardItemVO().
 
@@ -61,7 +61,7 @@ Sua saída será um objeto igual a este mostrado abaixo:
 
 ## 02 Passo - Setando valores para os metadados do formulário
 
-Para setar ou obter valores use os métodos acessores e modificadores do Java get e set.
+Para setar ou obter valores use os métodos acessores e modificadores getters e setters do Java.
 
 Você pode visualizar a lista completa, acessando este [link da documentação](https://fluig.totvs.com/api/sdk/com/fluig/sdk/api/workflow/CardItemVO.html).
 

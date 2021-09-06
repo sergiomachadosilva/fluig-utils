@@ -5,4 +5,4 @@
 
 ---
 
-#### [Vejá aqui todos os métodos do serviço getCardAPIService](https://api.fluig.com/old/sdk/com/fluig/sdk/service/CardAPIService.html)
+#### [Veja aqui todos os métodos do serviço getCardAPIService](https://api.fluig.com/old/sdk/com/fluig/sdk/service/CardAPIService.html)

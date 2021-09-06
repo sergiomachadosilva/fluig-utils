@@ -42,6 +42,8 @@ ficha.add(campo3);
 
 ## 04 Passo - Executando o método
 
+Vamos chamar o método create passando para ele o código do formulário e a lista com os objetos CardFieldVO.
+
 ```js
 // Chama o serviço e guarda o retorno na variável result
 var result = fluigAPI.getCardAPIService().create(2072, ficha);

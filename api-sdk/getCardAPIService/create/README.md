@@ -40,6 +40,23 @@ ficha.add(campo2);
 ficha.add(campo3);
 ```
 
+### Atenção - Adicionando valores em tabelas pai e filho
+
+Caso queria incluir campos em uma tabela pai e filho, inclua três underscore mais o índice da tabela pai e filho.
+
+Suponhamos que os campos acima fossem de uma tabela pai e filho, e quiséssemos adicionar a primeira linha da tabela, ficaria igual ao exemplo abaixo.
+
+```js
+campo1.setFieldId("anexo___1");
+campo1.setValue("Meu anexo.pdf");
+
+campo2.setFieldId("texto___1");
+campo2.setValue("Meu nome é Sérgio Machado");
+
+campo3.setFieldId("editor___1");
+campo3.setValue("Texto de exemplo do editor");
+```
+
 ## 04 Passo - Executando o método
 
 Vamos chamar o método create passando para ele o código do formulário e a lista com os objetos CardFieldVO.

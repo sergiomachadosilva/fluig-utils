@@ -52,6 +52,6 @@ log.info("### Retorno da variável result");
 log.dir(result);
 ```
 
-O retorno da variável result será um objeto com os registros do fomulário criado.
+O retorno da variável result será um objeto [CardFindFieldVO](https://api.fluig.com/old/sdk/com/fluig/sdk/api/cardindex/CardFindFieldVO.html) com os registros do fomulário criado.
 
 [Veja aqui o exemplo completo](create.js)

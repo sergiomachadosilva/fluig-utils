@@ -60,6 +60,6 @@ log.info("### Retorno do método createChild");
 log.dir(result);
 ```
 
-O retorno da variável result será um objeto com os registros da linha da tabela pai e filho.
+O retorno da variável result será um objeto [CardChildrenVO](https://api.fluig.com/old/sdk/com/fluig/sdk/api/cardindex/CardChildrenVO.html) com os registros da linha da tabela pai e filho.
 
 [Veja aqui o exemplo completo](createChild.js)

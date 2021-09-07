@@ -2,7 +2,7 @@
 
 - [create](create/README.md)
   Cria um novo registro de Formulário
-- [createChild](createchild/README.md) Cria um novo registro em uma tabela pai e filho do formulário
+- [createChild](createChild/README.md) Cria um novo registro em uma tabela pai e filho do formulário
 
 ---
 

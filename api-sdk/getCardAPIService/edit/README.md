@@ -2,8 +2,6 @@
 
 O método edit altera os valores dos campos de um registro de formulário.
 
-Em meus testes eu percebi uma desvantagem, **caso seu registro de formulário tenha uma ou mais tabelas, elas serão todas limpas**. Já com os campos normais apenas serão alterados os campos informados, diferente do webservice que limpa todos os campos que você não informar.
-
 ## 01 Passo - Criando uma lista para armazenar os campos da tabela pai e filho
 
 ```js
@@ -36,6 +34,20 @@ campo2.setValue("Diretor");
 // Adiciona os objetos cardFieldVO à lista
 ficha.add(campo1);
 ficha.add(campo2);
+```
+
+### Atenção - Alterando valores em tabelas pai e filho
+
+Em meus testes eu percebi uma desvantagem, **caso seu registro de formulário tenha uma ou mais tabelas, elas serão todas limpas**. Já com os campos normais apenas serão alterados os campos informados, diferente do webservice que limpa todos os campos que você não informar.
+
+Para resolver este problema você precisa passar esses valores novamente antes de atualizar. Suponhamos que os campos acima fossem de uma tabela pai e filho, e quiséssemos alterar a primeira linha da tabela, ficaria igual ao exemplo abaixo.
+
+```js
+campo1.setFieldId("responsavel___1");
+campo1.setValue("João");
+
+campo2.setFieldId("cargo___1");
+campo2.setValue("Diretor");
 ```
 
 ## 04 Passo - Executando o método

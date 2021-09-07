@@ -3,6 +3,7 @@
 - [create](create/README.md)
   Cria um novo registro de Formulário
 - [createChild](createChild%E2%80%8B) Cria um novo registro em uma tabela pai e filho do formulário
+- [edit](edit/README.md) Altera os registros de um formulário
 
 ---
 

@@ -42,7 +42,7 @@ ficha.add(campo3);
 
 ### Atenção - Adicionando valores em tabelas pai e filho
 
-Caso queria incluir campos em uma tabela pai e filho, inclua três underscore mais o índice da tabela pai e filho.
+Caso queira incluir campos em uma tabela pai e filho, inclua três underscore mais o índice da tabela pai e filho no name do campo.
 
 Suponhamos que os campos acima fossem de uma tabela pai e filho, e quiséssemos adicionar a primeira linha da tabela, ficaria igual ao exemplo abaixo.
 

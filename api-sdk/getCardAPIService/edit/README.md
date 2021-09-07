@@ -42,6 +42,8 @@ Em meus testes eu percebi uma desvantagem, **caso seu registro de formulário te
 
 Para resolver este problema você precisa passar esses valores novamente antes de atualizar. Suponhamos que os campos acima fossem de uma tabela pai e filho, e quiséssemos alterar a primeira linha da tabela, ficaria igual ao exemplo abaixo.
 
+Onde você deve incluir três underscore mais o índice da tabela pai e filho no name do campo.
+
 ```js
 campo1.setFieldId("responsavel___1");
 campo1.setValue("João");

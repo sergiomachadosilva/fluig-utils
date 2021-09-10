@@ -52,7 +52,7 @@ ficha.add(campo4);
 
 ## 04 Passo - Executando o método
 
-Vamos chamar o método editChild​ passando para ele o código de registro do formulário, o índice da tabela e a lista com os objetos CardFieldVO.
+Vamos chamar o método editChild​ passando para ele o código de registro do formulário, o índice da linha da tabela e a lista com os objetos CardFieldVO.
 
 | Parâmetro    | Tipo                | Descrição                                                                           | Obrigatório |
 | ------------ | ------------------- | ----------------------------------------------------------------------------------- | ----------- |

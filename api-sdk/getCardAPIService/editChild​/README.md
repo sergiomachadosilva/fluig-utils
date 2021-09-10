@@ -60,14 +60,21 @@ Vamos chamar o método editChild​ passando para ele o código de registro do f
 | row          | Integer             | Índice da linha da tabela que deseja editar                                         | Sim         |
 | cardFieldVOS | java.util.ArrayList | Lista de objetos CardFieldVO que possui os campos : fieldId : String value : String | Sim         |
 
-```js
+> Exemplo: editChild(cardId, row, cardFieldVOS)
+
+```sh
+editChild(cardId, row, cardFieldVOS)
+```
+
 // Executa o serviço para alterar os registro na tabela pai e filho
 var result = fluigAPI.getCardAPIService().editChild(2812, 2, ficha);
 
 log.info("### Retorno do método editChild");
 log.dir(result);
+
 ```
 
 O retorno da variável result será um objeto [CardChildrenVO](https://api.fluig.com/old/sdk/com/fluig/sdk/api/cardindex/CardChildrenVO.html) com os registros da linha da tabela pai e filho que foi editada.
 
 [Veja aqui o exemplo completo](editChild​.js)
+```

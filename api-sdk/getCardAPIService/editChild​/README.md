@@ -1,6 +1,6 @@
 # Método editChild do serviço getCardAPIService
 
-O método editChild altera os registros de uma tabela pai e filho do formulário.
+O método editChild altera os registros de uma linha da uma tabela pai e filho do formulário.
 
 ## 01 Passo - Criando uma lista para armazenar os campos da tabela pai e filho
 

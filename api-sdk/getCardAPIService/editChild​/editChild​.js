@@ -33,10 +33,7 @@ try {
     // Executa o serviço para alterar os registro na tabela pai e filho
     var result = fluigAPI.getCardAPIService().editChild(2812, 2, ficha)
 
-    log.info("### Retorno do método editChild");
-    log.dir(result);
-
 } catch (e) {
-    log.error("Erro au tentar atualizar os registro da tabela");
+    log.error("Erro ao tentar alterar os registros da tabela pai e filho do formulário");
     log.dir(e);
 }

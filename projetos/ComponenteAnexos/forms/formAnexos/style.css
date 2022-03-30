@@ -1,0 +1,72 @@
+.componentAnexo{
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.componentAnexo .input-group{
+	flex-grow: 1;
+	position: relative;
+}
+
+.componentAnexo .inputAnexo{
+	color: blue!important;
+	border-radius: 0!important;
+}
+
+.componentAnexo .icones{
+	display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.componentAnexo .icones .btn{
+	outline: none!important;
+    outline-offset: unset!important;
+    border-radius: 0;
+	padding-left: 7px;
+    padding-right: 7px;
+	margin-left: 3px;
+}
+
+.componentAnexo .icones .btn-default,
+.componentAnexo .icones .btn-default:focus, 
+.componentAnexo .icones .btn-default:active,
+.componentAnexo .icones .btn-default:hover{
+	border: solid 1px #58595b!important;
+}
+
+.componentAnexo .icones .btn-primary,
+.componentAnexo .icones .btn-primary:focus, 
+.componentAnexo .icones .btn-primary:active,
+.componentAnexo .icones .btn-primary:hover{
+	border: solid 1px #58595b!important;
+}
+
+.componentAnexo .icones .btn-success,
+.componentAnexo .icones .btn-success:focus, 
+.componentAnexo .icones .btn-success:active,
+.componentAnexo .icones .btn-success:hover{
+	border: solid 1px #1ab83f!important;
+}
+
+.componentAnexo .icones .btn-info,
+.componentAnexo .icones .btn-info:focus, 
+.componentAnexo .icones .btn-info:active,
+.componentAnexo .icones .btn-info:hover{
+	border: solid 1px #1eaad9!important;
+}
+.componentAnexo .icones .btn-warning,
+.componentAnexo .icones .btn-warning:focus, 
+.componentAnexo .icones .btn-warning:active,
+.componentAnexo .icones .btn-warning:hover{
+	border: solid 1px #e3b420!important;
+}
+
+.componentAnexo .icones .btn-danger,
+.componentAnexo .icones .btn-danger:focus, 
+.componentAnexo .icones .btn-danger:active,
+.componentAnexo .icones .btn-danger:hover{
+	border: solid 1px #cc3d3d!important;
+}
+

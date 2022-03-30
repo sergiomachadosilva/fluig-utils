@@ -1,0 +1,246 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+	
+	<link type="text/css" rel="stylesheet" href="style.css"/>
+	<script type="text/javascript" src="anexos.js" charset="utf-8"></script>
+	<script type="text/javascript" src="custom.js"></script>
+	
+</head>
+<body>
+	<div class="fluig-style-guide">
+		<form name="form" role="form">
+		
+			<div class="page-header">
+				<h2>Anexos</h2>
+			</div>
+			
+			<div class="panel panel-info fs-xl-margin-top">
+				<div class="panel-heading fs-sm-padding-top fs-sm-padding-bottom">
+					<h3 class="panel-title">
+						<b>Dados da solicitação</b>
+					</h3>
+				</div>
+				<div class="panel-body fs-sm-margin-top">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="form-group">
+								<label class="control-label" for="solicitanteNome">Nome</label>
+								<input type="hidden" id="solicitanteCode" name="solicitanteCode" />
+								<input type="text" class="form-control" id="solicitanteNome" name="solicitanteNome" />
+							</div>
+						</div>
+						
+						<div class="col-md-3">
+							<div class="form-group">
+								<label class="control-label" for="solicitanteEmail">Email</label>
+								<input type="text" class="form-control" id="solicitanteEmail" name="solicitanteEmail" />
+							</div>
+						</div>
+						
+						<div class="col-md-3">
+							<div class="form-group">
+								<label class="control-label">Registro de Nascimento</label>
+								<div class="componentAnexo">
+									<div class="input-group">
+										<input type="hidden" class="descAnexo" name="fdRegistroNascimento" value="Registro Nascimento" />
+										<input type="text" id="fnRegistroNascimento" name="fnRegistroNascimento" class="form-control inputAnexo input-sm" placeholder="Selecione um arquivo" readonly />
+									</div>
+									<div class="icones">
+										<button type="button" class="btnUpFile btn btn-success btn-sm" data-acao="upload" onclick="anexo(event)" title="Selecionar">
+											<i class="fluigicon fluigicon-file-upload icon-sm"></i>
+										</button>
+										<button style="display: none;" type="button" class="btnViewerFile btn btn-info btn-sm" data-acao="viewer" onclick="anexo(event)" title="Visualizar" disabled>
+											<i class="fluigicon fluigicon-eye-open icon-sm"></i>
+										</button>
+										<button style="display: none;" type="button" class="btnDownloadFile btn btn-info btn-sm" data-acao="download" onclick="anexo(event)" title="Download" disabled>
+											<i class="fluigicon fluigicon-download icon-sm"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-3">
+							<div class="form-group">
+								<label class="control-label">CPF</label>
+								<div class="componentAnexo">
+									<div class="input-group">
+										<input type="hidden" class="descAnexo" name="fdCpf" value="CPF" />
+										<input type="text" id="fnCpf" name="fnCpf" class="form-control inputAnexo input-sm" placeholder="Selecione um arquivo" readonly />
+									</div>
+									<div class="icones">
+										<button type="button" class="btnUpFile btn btn-success btn-sm" data-acao="upload" onclick="anexo(event)" title="Selecionar">
+											<i class="fluigicon fluigicon-file-upload icon-sm"></i>
+										</button>
+										<button style="display: none;" type="button" class="btnViewerFile btn btn-info btn-sm" data-acao="viewer" onclick="anexo(event)" title="Visualizar" disabled>
+											<i class="fluigicon fluigicon-eye-open icon-sm"></i>
+										</button>
+										<button style="display: none;" type="button" class="btnDownloadFile btn btn-info btn-sm" data-acao="download" onclick="anexo(event)" title="Download" disabled>
+											<i class="fluigicon fluigicon-download icon-sm"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="panel panel-info fs-xl-margin-top">
+				<div class="panel-heading fs-sm-padding-top fs-sm-padding-bottom">
+					<h3 class="panel-title">
+						<b>Dependentes</b>
+					</h3>
+				</div>
+				<div class="panel-body fs-sm-margin-top">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="table-responsive">
+								<table tablename="dependentes" id="tblDependente" class="table table-bordered tabelaPaiFilho" nodeletebutton=true noaddbutton =true>
+								    <thead class="fs-display-none">
+								        <tr>
+											<td></td>
+								            <td></td>
+											<td class="tdDeleteRow"></td>
+								        </tr>
+								    </thead>
+									<tbody>
+										<tr>
+											<td class="fs-v-align-middle fs-font-bold count" style="width: 1%;"></td>
+											<td>
+												<div class="row">
+													<div class="col-md-2">
+														<div class="form-group">
+															<label class="control-label">Código</label>
+															<input type="text" class="form-control input-sm" id="dependenteCodigo" name="dependenteCodigo" readonly />
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<label class="control-label">Nome</label>
+															<input type="text" class="form-control input-sm" id="dependenteNome" name="dependenteNome" />
+														</div>
+													</div>
+													<div class="col-md-4">
+														<div class="form-group">
+															<label class="control-label">Registro de Nascimento</label>
+															<div class="componentAnexo">
+																<div class="input-group">
+																	<input type="hidden" class="descAnexo" name="fdRegistroNascDep" />
+																	<input type="text" id="fnRegistroNascDep" name="fnRegistroNascDep" class="form-control inputAnexo input-sm" placeholder="Selecione um arquivo" readonly />
+																</div>
+																<div class="icones">
+																	<button type="button" class="btnUpFile btn btn-success btn-sm" data-acao="upload" onclick="anexo(event)" title="Selecionar">
+																		<i class="fluigicon fluigicon-file-upload icon-sm"></i>
+																	</button>
+																	<button style="display: none;" type="button" class="btnViewerFile btn btn-info btn-sm" data-acao="viewer" onclick="anexo(event)" title="Visualizar" disabled>
+																		<i class="fluigicon fluigicon-eye-open icon-sm"></i>
+																	</button>
+																	<button style="display: none;" type="button" class="btnDownloadFile btn btn-info btn-sm" data-acao="download" onclick="anexo(event)" title="Download" disabled>
+																		<i class="fluigicon fluigicon-download icon-sm"></i>
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</td>
+											<td class="fs-v-align-middle fs-text-center tdDeleteRow" style="width: 1%;">
+												<div>
+													<i class="fluigicon fluigicon-trash icon-md fs-xs-padding fs-cursor-pointer fs-color-danger" title="Remover Dependente"  onclick="destroyRowDependente(this)"></i>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+					       		</table>
+							</div>
+						</div>
+						<div class="col-md-12 btnAddNewRow" id="btnAddNewRowDependente">
+							<button class="btn btn-sm btn-success" onClick="addNewRowDependente()">Novo Dependente</button>
+						</div>
+					</div>
+				</div>
+			</div>
+				
+			<div class="panel panel-info fs-xl-margin-top">
+				<div class="panel-heading fs-sm-padding-top fs-sm-padding-bottom">
+					<h3 class="panel-title">
+						<b>Aprovador</b>
+					</h3>
+				</div>
+				<div class="panel-body fs-sm-margin-top">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="form-group">
+								<label class="control-label" for="aprovadorNome">Nome</label>
+								<input type="hidden" id="aprovadorCode" name="aprovadorCode" />
+								<input type="text" class="form-control" id="aprovadorNome" name="aprovadorNome" />
+							</div>
+						</div>
+						
+						<div class="col-md-3">
+							<div class="form-group">
+								<label class="control-label" for="aprovadorEmail">Email</label>
+								<input type="text" class="form-control" id="aprovadorEmail" name="aprovadorEmail" />
+							</div>
+						</div>
+						
+						<div class="col-md-3">
+							<div class="form-group">
+								<label class="control-label">Foto</label>
+								<div class="componentAnexo">
+									<div class="input-group">
+										<input type="hidden" class="descAnexo" name="fdFoto" value="Foto" />
+										<input type="text" id="fnFoto" name="fnFoto" class="form-control inputAnexo input-sm" placeholder="Selecione um arquivo" readonly />
+									</div>
+									<div class="icones">
+										<button type="button" class="btnUpFile btn btn-success btn-sm" data-acao="upload" onclick="anexo(event)" title="Selecionar">
+											<i class="fluigicon fluigicon-file-upload icon-sm"></i>
+										</button>
+										<button style="display: none;" type="button" class="btnViewerFile btn btn-info btn-sm" data-acao="viewer" onclick="anexo(event)" title="Visualizar" disabled>
+											<i class="fluigicon fluigicon-eye-open icon-sm"></i>
+										</button>
+										<button style="display: none;" type="button" class="btnDownloadFile btn btn-info btn-sm" data-acao="download" onclick="anexo(event)" title="Download" disabled>
+											<i class="fluigicon fluigicon-download icon-sm"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+				
+						<div class="col-md-3">
+							<div class="form-group">
+								<label class="control-label">Comprovante</label>
+								<div class="componentAnexo">
+									<div class="input-group">
+										<input type="hidden" class="descAnexo" name="fdComprovante" value="Comprovante" />
+										<input type="text" id="fnComprovante" name="fnComprovante" class="form-control inputAnexo input-sm" placeholder="Selecione um arquivo" readonly />
+									</div>
+									<div class="icones">
+										<button type="button" class="btnUpFile btn btn-success btn-sm" data-acao="upload" onclick="anexo(event)" title="Selecionar">
+											<i class="fluigicon fluigicon-file-upload icon-sm"></i>
+										</button>
+										<button style="display: none;" type="button" class="btnViewerFile btn btn-info btn-sm" data-acao="viewer" onclick="anexo(event)" title="Visualizar" disabled>
+											<i class="fluigicon fluigicon-eye-open icon-sm"></i>
+										</button>
+										<button style="display: none;" type="button" class="btnDownloadFile btn btn-info btn-sm" data-acao="download" onclick="anexo(event)" title="Download" disabled>
+											<i class="fluigicon fluigicon-download icon-sm"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+						
+		</form>
+	</div>
+</body>
+</html>

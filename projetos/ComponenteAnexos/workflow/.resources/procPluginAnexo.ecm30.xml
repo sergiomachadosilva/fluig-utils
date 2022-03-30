@@ -1,0 +1,296 @@
+<list>
+  <ProcessDefinition>
+    <processDefinitionPK>
+      <companyId>1</companyId>
+      <processId>procPluginAnexo</processId>
+    </processDefinitionPK>
+    <processDescription>Plugin Anexo</processDescription>
+    <instruction></instruction>
+    <active>true</active>
+    <publicProcess>false</publicProcess>
+    <volumeId>Default</volumeId>
+    <categoryId>Testes</categoryId>
+    <managerEngineAllocationId></managerEngineAllocationId>
+    <snapshotFrequency>0</snapshotFrequency>
+    <baseDay>0</baseDay>
+    <baseMonth>0</baseMonth>
+    <periodId>Default</periodId>
+    <uniqueCardVersion>false</uniqueCardVersion>
+    <keyWord></keyWord>
+    <complementsLevel>1</complementsLevel>
+    <notifyRequisitionerComplements>true</notifyRequisitionerComplements>
+    <notifyManagerComplements>false</notifyManagerComplements>
+    <deadlineTime>0</deadlineTime>
+    <warningDeadlineTime>0</warningDeadlineTime>
+    <notifyAuthorityComplements>true</notifyAuthorityComplements>
+  </ProcessDefinition>
+  <ProcessDefinitionVersion>
+    <processDefinitionVersionPK>
+      <companyId>1</companyId>
+      <processId>Plugin Anexo</processId>
+      <version>15</version>
+    </processDefinitionVersionPK>
+    <versionDescription></versionDescription>
+    <formId>1647</formId>
+    <editionMode>true</editionMode>
+    <updateAttachmentsVersion>false</updateAttachmentsVersion>
+    <controlsAttachmentsSecurity>false</controlsAttachmentsSecurity>
+    <active>true</active>
+    <blockedVersion>false</blockedVersion>
+    <counterSign>false</counterSign>
+    <openInstances>0</openInstances>
+    <bpmnVersion>1</bpmnVersion>
+    <processStates/>
+    <favorito>false</favorito>
+    <inheritFormSecurity>false</inheritFormSecurity>
+    <mobileReady>false</mobileReady>
+  </ProcessDefinitionVersion>
+  <list>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procPluginAnexo</processId>
+        <version>1</version>
+        <sequence>1</sequence>
+      </processStatePK>
+      <stateName>Início</stateName>
+      <stateDescription>Início</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>true</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>170</positionX>
+      <positionY>220</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>10</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procPluginAnexo</processId>
+        <version>1</version>
+        <sequence>2</sequence>
+      </processStatePK>
+      <stateName>Aprovação</stateName>
+      <stateDescription>Aprovação</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>28800</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Usuário</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;User&gt;sergio.machado&lt;/User&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>300</positionX>
+      <positionY>207</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>procPluginAnexo</processId>
+        <version>1</version>
+        <sequence>4</sequence>
+      </processStatePK>
+      <stateName>Fim</stateName>
+      <stateDescription>Fim</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>527</positionX>
+      <positionY>220</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>60</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+  </list>
+  <list/>
+  <list>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procPluginAnexo</processId>
+        <version>1</version>
+        <linkSequence>3</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>1</initialStateSequence>
+      <finalStateSequence>2</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>procPluginAnexo</processId>
+        <version>1</version>
+        <linkSequence>5</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>2</initialStateSequence>
+      <finalStateSequence>4</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+  </list>
+  <list/>
+  <list>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterProcessCreate</eventId>
+        <processId>procPluginAnexo</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterProcessCreate(processId){&#xd;
+	&#xd;
+	var companyId = java.lang.Integer(getValue(&quot;WKCompany&quot;))&#xd;
+	var metaListId = java.lang.Integer(getMetaListId(companyId))&#xd;
+	&#xd;
+	var codigoEmpresa = java.lang.String.format(&quot;%03d&quot;, companyId);&#xd;
+	var codigoMetaListId = java.lang.String.format(&quot;%03d&quot;, metaListId);&#xd;
+	&#xd;
+	var tabelaBanco = &quot;ML&quot;+codigoEmpresa + codigoMetaListId&#xd;
+	&#xd;
+	log.info(&quot;### retorno getMetaListId&quot;)&#xd;
+	log.dir(companyId)&#xd;
+	log.dir(metaListId)&#xd;
+	log.dir(codigoEmpresa)&#xd;
+	log.dir(codigoMetaListId)&#xd;
+	log.dir(tabelaBanco)&#xd;
+}&#xd;
+&#xd;
+&#xd;
+&#xd;
+/**&#xd;
+ * Obtém a metaListId do formulário com base no código do formulário e id da empresa&#xd;
+ * @returns {String} Retorna a metaListId do formulário&#xd;
+ * @author Sérgio Machado&#xd;
+ */&#xd;
+function getMetaListId(){&#xd;
+&#xd;
+	var documentId = getValue(&quot;WKFormId&quot;) //Retorna o ID do formulário&#xd;
+	&#xd;
+	var c1 = DatasetFactory.createConstraint(&quot;documentPK.companyId&quot;, getValue(&quot;WKCompany&quot;), getValue(&quot;WKCompany&quot;), ConstraintType.MUST);&#xd;
+	var c2 = DatasetFactory.createConstraint(&quot;documentPK.documentId&quot;, documentId, documentId, ConstraintType.MUST);&#xd;
+	var c3 = DatasetFactory.createConstraint(&quot;activeVersion&quot;, true, true, ConstraintType.MUST);&#xd;
+	var dataset = DatasetFactory.getDataset(&apos;document&apos;, null, new Array(c1, c2, c3), null);&#xd;
+	&#xd;
+	return String(dataset.getValue(0, &quot;metaListId&quot;))&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+  </list>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+</list>

@@ -12,4 +12,7 @@ Com essa solução o usuário será capaz de realizar o upload, download, visual
 - Em modo de visualização o botão de upload/excluir é removido;
 - Em modo de visualização o botão de visualizar anexo apenas ficará visível se houver anexo;
 - Na tabela pai e filho ao remover uma linha e caso exista anexo, o mesmo também será removido;
-- Para o campo Registro de Nascimento em dados da solicitação, se o campo com o nome do arquivo físico estiver preenchido e ele não existir na aba de anexos do Fluig. Será disparado um alerta pelo _beforeSendValidate_ ao tentar enviar a solicitação.
+- Para o campo Registro de Nascimento em dados da solicitação, se o campo com o nome do arquivo físico estiver preenchido e ele não existir na aba de anexos do Fluig. Será disparado um alerta pelo _beforeSendValidate_ ao tentar enviar a solicitação;
+- Ao tentar deletar um anexo, uma linha da tabela pai e filho ou realizar um download, será apresentado um modal de confirmação, evitando assim que o usuário remove itens sem querer;
+- Se tentar visualizar um anexo e ele não existir na aba de anexos do fluig, será exibido uma notificação toast;
+- É indiferente o campo que guarda o nome do arquivo físico e a descrição do anexo estar bloqueado pelo _enableFields_, desenvolvi as funções já prevendo essa situação.

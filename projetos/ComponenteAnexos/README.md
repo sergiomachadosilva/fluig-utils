@@ -1,9 +1,13 @@
 # Projeto com componente personalizado para upload de anexos no Fluig
 
-Com essa solução o usuário será capaz de realizar o upload, download, visualizar e exluir de uma solicitação de forma simples no Fluig, sem que seja necessário acessar a aba de anexos, tudo será feito através de eventos de click em botões específicos para cada anexo, incluindo até mesmo as tabelas pai e filho.
+Com essa solução o usuário será capaz de realizar o upload, download, visualizar e excluir de uma solicitação de forma simples no Fluig, sem que seja necessário acessar a aba de anexos, tudo será feito através de eventos de click em botões específicos para cada anexo, incluindo até mesmo as tabelas pai e filho.
 
 ![Print 01](https://github.com/sergiomachadosilva/fluig-utils/blob/main/projetos/ComponenteAnexos/print_01.png)
 ![Animação](https://github.com/sergiomachadosilva/fluig-utils/blob/main/projetos/ComponenteAnexos/animacaoProjeto.gif)
+
+### Vídeo de demonstração:
+
+https://youtu.be/Erl8tPoN44w
 
 ### Alguns comportamentos padrões:
 

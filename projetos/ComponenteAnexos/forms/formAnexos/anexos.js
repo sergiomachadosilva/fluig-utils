@@ -256,7 +256,7 @@ function btnState(idInput, acao, btn) {
         let btnViewerFile = $(`#${idInput}`).parent().parent().find(".btnViewerFile");
         if (acao == "delete") {
             btnUpFile.removeClass("btn-success").addClass("btn-danger");
-            btnUpFile.attr('data-acao', acao);
+            btnUpFile.attr({ 'data-acao': acao, 'title': 'Excluir' });
             btnUpFile.find("i").removeClass("fluigicon-file-upload").addClass("fluigicon-trash");
             if (btn == "download") {
                 btnDownloadFile.prop("disabled", false);
@@ -269,7 +269,7 @@ function btnState(idInput, acao, btn) {
         }
         if (acao == "upload") {
             btnUpFile.removeClass("btn-danger").addClass("btn-success");
-            btnUpFile.attr('data-acao', acao);
+            btnUpFile.attr({ 'data-acao': acao, 'title': 'Selecionar' });
             btnUpFile.find("i").removeClass("fluigicon-trash").addClass("fluigicon-file-upload");
             btnDownloadFile.prop("disabled", true);
             btnDownloadFile.hide()

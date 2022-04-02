@@ -116,7 +116,7 @@ function tableLineCount(tablename) {
 /**
  * Exemplo de validação de anexos usando o beforeSendValidate
  * Nestes exemplos abaixo eu não estou obrigando o campo do anexo, isso eu estou realizando no validateForm
- * Imagine a seguinte situação, digamos que você obrigue um determinado campo de anexo no enableFields, mas por algum motivo
+ * Imagine a seguinte situação, digamos que você obrigue um determinado campo de anexo no validateForm, mas por algum motivo
  * que seja por algum erro de script ou ação de usuário, tenha removido este anexo da aba de anexos do Fluig
  * Quando chegar no validateForm ele vai deixar passar já que é analizado apenas o valor do campo
  *

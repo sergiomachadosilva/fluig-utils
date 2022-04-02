@@ -333,11 +333,11 @@ function invisibleBtnUpload(inputFile) {
         }
         if ($(`#_${inputFile}`).length) {
             if ($(`#_${inputFile}`).val() == "") {
-                $(`#_${inputFile}`).attr({ placeholder: "Nenhuma anexo selecionado" });
+                $(`#_${inputFile}`).attr({ placeholder: "Nenhum anexo selecionado" });
             }
         } else {
             if ($(`#${inputFile}`).val() == "") {
-                $(`#${inputFile}`).attr({ placeholder: "Nenhuma anexo selecionado" });
+                $(`#${inputFile}`).attr({ placeholder: "Nenhum anexo selecionado" });
             }
         }
     } catch (e) {

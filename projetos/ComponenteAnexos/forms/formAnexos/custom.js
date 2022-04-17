@@ -87,9 +87,10 @@ function getIndice(id) {
 
 
 /**
- * Insere a numeração correspondente a cada linha das tabelas pai e filho
+ * Insere a numeração correspondente a cada linha da tabela pai e filho de forma automática.
  * @param {String} tablename Parâmetro obrigatório, tablename da tabela pai e filho.
- * Se passar o valor de false, o script irá percorrer todas as tabelas, indicado apenas no carregamento do formulário
+ * Quando informado um valor válido para tablename, o script irá percorre apenas as linhas da própia tabela.
+ * Se informar o valor false para o parâmetro tablename, o script irá percorrer todas as tabelas. Recomendado apenas para o carregamento do formulário.
  * @return {void} 
  * @author Sérgio Machado
  */

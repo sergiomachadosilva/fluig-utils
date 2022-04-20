@@ -27,13 +27,13 @@ $(document).ready(function () {
 function addNewRowDependente() {
     try {
         const tablename = "dependentes"
-        const ibByTimestamp = (new Date().getTime()).toString(32);
+        const idByTimestamp = (new Date().getTime()).toString(32);
         const indice = wdkAddChild(tablename);
-        $(`#dependenteCodigo___${indice}`).val(ibByTimestamp).prop("readonly", true);
-        $(`#fdRegistroNascDep___${indice}`).val(`Registro de Nascimento ${ibByTimestamp}`);
+        $(`#dependenteCodigo___${indice}`).val(idByTimestamp).prop("readonly", true);
+        $(`#fdRegistroNascDep___${indice}`).val(`Registro de Nascimento ${idByTimestamp}`);
         tableLineCount(tablename)
     } catch (e) {
-        console.error("Houve um erro inesperado na função addRowTable")
+        console.error("Houve um erro inesperado na função addNewRowDependente")
         console.error(e)
     }
 }

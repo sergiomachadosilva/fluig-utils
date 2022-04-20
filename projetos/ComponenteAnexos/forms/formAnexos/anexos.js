@@ -395,7 +395,7 @@ function invalidFile(idInput) {
             return false
         }
     } catch (e) {
-        console.error('Houve um erro inesperado na função validFile')
+        console.error('Houve um erro inesperado na função invalidFile')
         console.error(e)
     }
 }
@@ -418,7 +418,7 @@ function hasFileFluig(fileDescription) {
         }
         return false
     } catch (e) {
-        console.error('Houve um erro inesperado na função validarAnexo')
+        console.error('Houve um erro inesperado na função hasFileFluig')
         console.error(e)
     }
 }

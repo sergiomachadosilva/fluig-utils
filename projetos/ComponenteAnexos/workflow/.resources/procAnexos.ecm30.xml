@@ -5,7 +5,8 @@
       <processId>procAnexos</processId>
     </processDefinitionPK>
     <processDescription>Componente para Anexos</processDescription>
-    <instruction></instruction>
+    <instruction>Instruções do processo aqui&#xd;
+Processo para teste do componente personalizado para uploads de anexos. V2</instruction>
     <active>true</active>
     <publicProcess>false</publicProcess>
     <volumeId>Default</volumeId>
@@ -28,7 +29,7 @@
     <processDefinitionVersionPK>
       <companyId>1</companyId>
       <processId>Componente para Anexos</processId>
-      <version>1</version>
+      <version>4</version>
     </processDefinitionVersionPK>
     <versionDescription></versionDescription>
     <formId>3278</formId>
@@ -233,52 +234,7 @@
     </ProcessLink>
   </list>
   <list/>
-  <list>
-    <WorkflowProcessEvent>
-      <workflowProcessEventPK>
-        <companyId>1</companyId>
-        <eventId>afterProcessCreate</eventId>
-        <processId>procAnexos</processId>
-        <version>1</version>
-      </workflowProcessEventPK>
-      <eventDescription>function afterProcessCreate(processId){&#xd;
-	&#xd;
-	var companyId = java.lang.Integer(getValue(&quot;WKCompany&quot;))&#xd;
-	var metaListId = java.lang.Integer(getMetaListId(companyId))&#xd;
-	&#xd;
-	var codigoEmpresa = java.lang.String.format(&quot;%03d&quot;, companyId);&#xd;
-	var codigoMetaListId = java.lang.String.format(&quot;%03d&quot;, metaListId);&#xd;
-	&#xd;
-	var tabelaBanco = &quot;ML&quot;+codigoEmpresa + codigoMetaListId&#xd;
-	&#xd;
-	log.info(&quot;### retorno getMetaListId&quot;)&#xd;
-	log.dir(companyId)&#xd;
-	log.dir(metaListId)&#xd;
-	log.dir(codigoEmpresa)&#xd;
-	log.dir(codigoMetaListId)&#xd;
-	log.dir(tabelaBanco)&#xd;
-}&#xd;
-&#xd;
-&#xd;
-&#xd;
-/**&#xd;
- * Obtém a metaListId do formulário com base no código do formulário e id da empresa&#xd;
- * @returns {String} Retorna a metaListId do formulário&#xd;
- * @author Sérgio Machado&#xd;
- */&#xd;
-function getMetaListId(){&#xd;
-&#xd;
-	var documentId = getValue(&quot;WKFormId&quot;) //Retorna o ID do formulário&#xd;
-	&#xd;
-	var c1 = DatasetFactory.createConstraint(&quot;documentPK.companyId&quot;, getValue(&quot;WKCompany&quot;), getValue(&quot;WKCompany&quot;), ConstraintType.MUST);&#xd;
-	var c2 = DatasetFactory.createConstraint(&quot;documentPK.documentId&quot;, documentId, documentId, ConstraintType.MUST);&#xd;
-	var c3 = DatasetFactory.createConstraint(&quot;activeVersion&quot;, true, true, ConstraintType.MUST);&#xd;
-	var dataset = DatasetFactory.getDataset(&apos;document&apos;, null, new Array(c1, c2, c3), null);&#xd;
-	&#xd;
-	return String(dataset.getValue(0, &quot;metaListId&quot;))&#xd;
-}</eventDescription>
-    </WorkflowProcessEvent>
-  </list>
+  <list/>
   <list/>
   <list/>
   <list/>

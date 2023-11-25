@@ -4,6 +4,7 @@ function displayFields(form,customHTML){
 	form.setHidePrintLink(true);
 	
 	var ATIVIDADE = Number(getValue("WKNumState")) ? Number(getValue("WKNumState")) : INICIO;
+	var MOBILE = form.getMobile();
 	var MODE = form.getFormMode()
 	var usuarioCorrente = fluigAPI.getUserService().getCurrent();
 	var customJS = "<script>";
@@ -58,6 +59,7 @@ function displayFields(form,customHTML){
 		
 	customJS += "function getAtividade(){ return '" + ATIVIDADE + "'};";
 	customJS += "function getMode(){ return '" + MODE + "'};";
+	customJS += "function getMobile(){ return " + MOBILE + "};";
 	customJS += "displayBtnFiles();";
 	customJS += "tableLineCount();";
 	customJS += "</script>"

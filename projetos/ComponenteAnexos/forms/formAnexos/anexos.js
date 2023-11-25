@@ -44,28 +44,33 @@ function anexo(event) {
  */
 function uploadFile(fileDescription, idInput) {
     try {
-        var tabAttachments = parent.document.getElementById("tab-attachments");
-        if (tabAttachments) {
-            //Verifica se o navegador é o Ie9 para realizar o devido tratamento
-            if (parent.WCMAPI.isIe9()) {
-                $(".ecm-navigation-silverlight", parent.document).show("fade").css("top", 0);
-                $("#ecm-navigation-silverlight", parent.document).attr({
-                    "data-on-camera": "true", "data-file-name-camera": fileDescription, "data-inputNameFile": idInput
-                });
-                $(parent.document).on("keyup", this.actionKeyup)
-            } else {
-                var element = parent.document.getElementById("ecm-navigation-inputFile-clone");
-                if (element && document.createEvent) {
-                    element.setAttribute("data-on-camera", "true");
-                    if (fileDescription && idInput) {
-                        element.setAttribute("data-file-name-camera", fileDescription)
-                        element.setAttribute("data-inputNameFile", idInput)
+        if (!getMobile()) {
+            var tabAttachments = parent.document.getElementById("tab-attachments");
+            if (tabAttachments) {
+                //Verifica se o navegador é o Ie9 para realizar o devido tratamento
+                if (parent.WCMAPI.isIe9()) {
+                    $(".ecm-navigation-silverlight", parent.document).show("fade").css("top", 0);
+                    $("#ecm-navigation-silverlight", parent.document).attr({
+                        "data-on-camera": "true", "data-file-name-camera": fileDescription, "data-inputNameFile": idInput
+                    });
+                    $(parent.document).on("keyup", this.actionKeyup)
+                } else {
+                    var element = parent.document.getElementById("ecm-navigation-inputFile-clone");
+                    if (element && document.createEvent) {
+                        element.setAttribute("data-on-camera", "true");
+                        if (fileDescription && idInput) {
+                            element.setAttribute("data-file-name-camera", fileDescription)
+                            element.setAttribute("data-inputNameFile", idInput)
+                        }
+                        //Realiza o click no botão "Carregar arquivos" que tem na aba de anexos
+                        element.click();
                     }
-                    //Realiza o click no botão "Carregar arquivos" que tem na aba de anexos
-                    element.click();
                 }
             }
-        }
+        }else{
+			JSInterface.showCamera(fileDescription);
+			setFilePhisicalName(idInput, fileDescription)
+		}
     } catch (e) {
         console.error("Houve um erro inesperado na função uploadFile")
         console.error(e)
